@@ -46,14 +46,42 @@ namespace CapaPresentacion
         private void pbMostar_Click(object sender, EventArgs e)
         {
             //if- estructura condicional
+            //ocultarme el panel del menu cuando este desplegado 
+            //== comparacion
+            //= 
             if (pnlMenu.Width==170)
             {
+                // cabia el ancho a 0
                 pnlMenu.Width=0;
             }
             else
             {
+                //si es 0, esta oculto, me lo pasa a 170, me lo muestra
                 pnlMenu.Width=170;
             }
         }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //comentarios
+            // una linea 
+
+            // una instancia -- accediendo a la memoria
+            frmClientes frmClientes = new frmClientes();
+            // showDialog: muestra el formulario
+            frmClientes.ShowDialog();
+        }
+    }
+}
     }
 }

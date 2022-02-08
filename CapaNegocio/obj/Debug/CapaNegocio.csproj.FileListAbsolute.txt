@@ -7,3 +7,5 @@ C:\Users\luisi\source\repos\Web3UTNApp\CapaNegocio\obj\Debug\CapaNegocio.csproj.
 C:\Users\luisi\source\repos\Web3UTNApp\CapaNegocio\obj\Debug\CapaNegocio.csproj.CopyComplete
 C:\Users\luisi\source\repos\Web3UTNApp\CapaNegocio\obj\Debug\CapaNegocio.dll
 C:\Users\luisi\source\repos\Web3UTNApp\CapaNegocio\obj\Debug\CapaNegocio.pdb
+C:\Users\luisi\source\repos\Web3UTNApp\CapaNegocio\bin\Debug\Entidades.dll
+C:\Users\luisi\source\repos\Web3UTNApp\CapaNegocio\bin\Debug\Entidades.pdb

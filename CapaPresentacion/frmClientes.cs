@@ -19,7 +19,12 @@ namespace CapaPresentacion
 
         private void frmClientes_Load(object sender, EventArgs e)
         {
+            lbltitulo.Text =   "Mantenimiento Clientes";
+        }
 
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            this.Close();   
         }
     }
 }
