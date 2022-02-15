@@ -54,26 +54,29 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(600, 100);
+            this.panel1.Size = new System.Drawing.Size(800, 123);
             this.panel1.TabIndex = 2;
             // 
             // lbltitulo
             // 
             this.lbltitulo.AutoSize = true;
             this.lbltitulo.ForeColor = System.Drawing.Color.White;
-            this.lbltitulo.Location = new System.Drawing.Point(65, 22);
+            this.lbltitulo.Location = new System.Drawing.Point(87, 27);
+            this.lbltitulo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbltitulo.Name = "lbltitulo";
-            this.lbltitulo.Size = new System.Drawing.Size(35, 13);
+            this.lbltitulo.Size = new System.Drawing.Size(44, 16);
             this.lbltitulo.TabIndex = 2;
             this.lbltitulo.Text = "label1";
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(513, 13);
+            this.pictureBox2.Location = new System.Drawing.Point(704, 16);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(44, 36);
+            this.pictureBox2.Size = new System.Drawing.Size(38, 27);
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
@@ -81,9 +84,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(7, 13);
+            this.pictureBox1.Location = new System.Drawing.Point(9, 16);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(42, 36);
+            this.pictureBox1.Size = new System.Drawing.Size(56, 44);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -96,10 +100,11 @@
             this.columnHeader4});
             this.lstvLista.GridLines = true;
             this.lstvLista.HideSelection = false;
-            this.lstvLista.Location = new System.Drawing.Point(7, 152);
+            this.lstvLista.Location = new System.Drawing.Point(9, 187);
+            this.lstvLista.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lstvLista.MultiSelect = false;
             this.lstvLista.Name = "lstvLista";
-            this.lstvLista.Size = new System.Drawing.Size(581, 188);
+            this.lstvLista.Size = new System.Drawing.Size(773, 230);
             this.lstvLista.TabIndex = 3;
             this.lstvLista.UseCompatibleStateImageBehavior = false;
             this.lstvLista.View = System.Windows.Forms.View.Details;
@@ -126,32 +131,34 @@
             // 
             // txtBusqueda
             // 
-            this.txtBusqueda.Location = new System.Drawing.Point(13, 119);
+            this.txtBusqueda.Location = new System.Drawing.Point(17, 146);
+            this.txtBusqueda.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtBusqueda.Name = "txtBusqueda";
-            this.txtBusqueda.Size = new System.Drawing.Size(424, 20);
+            this.txtBusqueda.Size = new System.Drawing.Size(564, 22);
             this.txtBusqueda.TabIndex = 4;
             // 
             // btnNuevo
             // 
             this.btnNuevo.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnNuevo.Location = new System.Drawing.Point(460, 106);
+            this.btnNuevo.Location = new System.Drawing.Point(613, 130);
+            this.btnNuevo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnNuevo.Name = "btnNuevo";
-            this.btnNuevo.Size = new System.Drawing.Size(97, 40);
+            this.btnNuevo.Size = new System.Drawing.Size(129, 49);
             this.btnNuevo.TabIndex = 5;
             this.btnNuevo.Text = "Nuevo";
             this.btnNuevo.UseVisualStyleBackColor = false;
             // 
             // frmClientes
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(600, 366);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnNuevo);
             this.Controls.Add(this.txtBusqueda);
             this.Controls.Add(this.lstvLista);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmClientes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmClientes";

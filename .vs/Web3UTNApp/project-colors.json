@@ -20,7 +20,12 @@
       "ProjectGuid": "760f34be-c4d4-4788-b8e4-8e3feb284e31",
       "DisplayName": "CapaDatos",
       "ColorIndex": 2
+    },
+    "96d24679-f093-498f-85b3-9d99044d2870": {
+      "ProjectGuid": "96d24679-f093-498f-85b3-9d99044d2870",
+      "DisplayName": "Entidades",
+      "ColorIndex": 3
     }
   },
-  "NextColorIndex": 3
+  "NextColorIndex": 4
 }
