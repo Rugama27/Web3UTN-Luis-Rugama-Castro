@@ -33,7 +33,7 @@ namespace CapaPresentacion
             // una linea 
 
             // una instancia -- accediendo a la memoria
-            frmClientes frmClientes = new frmClientes();
+            frmListaClientes frmClientes = new frmListaClientes();
             // showDialog: muestra el formulario
             frmClientes.ShowDialog();
         }
@@ -49,7 +49,7 @@ namespace CapaPresentacion
             // una linea 
 
             // una instancia -- accediendo a la memoria
-            frmClientes frmClientes = new frmClientes();
+            frmListaClientes frmClientes = new frmListaClientes();
             // showDialog: muestra el formulario
             frmClientes.ShowDialog();
         }

@@ -40,7 +40,7 @@ namespace CapaPresentacion
 
         private void frmPrincipal3_Load(object sender, EventArgs e)
         {
-
+            lblTitulo.Text = "UTN APP";
         }
 
         private void pbMostar_Click(object sender, EventArgs e)
@@ -77,11 +77,16 @@ namespace CapaPresentacion
             // una linea 
 
             // una instancia -- accediendo a la memoria
-            frmClientes frmClientes = new frmClientes();
+            frmListaClientes frmClientes = new frmListaClientes();
             // showDialog: muestra el formulario
             frmClientes.ShowDialog();
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            this.Close();   
+        }
     }
 }
-    }
-}
+    
+

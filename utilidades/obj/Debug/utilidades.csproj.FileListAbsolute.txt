@@ -1,0 +1,6 @@
+C:\Users\luisi\source\repos\Web3UTNApp\utilidades\bin\Debug\utilidades.dll
+C:\Users\luisi\source\repos\Web3UTNApp\utilidades\bin\Debug\utilidades.pdb
+C:\Users\luisi\source\repos\Web3UTNApp\utilidades\obj\Debug\utilidades.csproj.AssemblyReference.cache
+C:\Users\luisi\source\repos\Web3UTNApp\utilidades\obj\Debug\utilidades.csproj.CoreCompileInputs.cache
+C:\Users\luisi\source\repos\Web3UTNApp\utilidades\obj\Debug\utilidades.dll
+C:\Users\luisi\source\repos\Web3UTNApp\utilidades\obj\Debug\utilidades.pdb

@@ -11,7 +11,7 @@ namespace Entidades
     //protected puede accederlo mediante la herencie
     // internal es public pero dentro del ensamblado
     // internal proteted : solo herencia pero dentro del mismo ensamblado        
-    public class clsAutomovil
+    public class clsAutomovil : clsVehiculo
     {
         
 
@@ -31,8 +31,24 @@ namespace Entidades
 
         //metodos de acceso- encapsulados- set-get
 
-        public int numeroLlantas { get; set; }
-        public string marca { get; set;}
+        public int numeroLlanta { get; set; }
+        public string kilometraje { get; set; }
+
+        public override string conducir()
+        {
+            return "Estoy conduciendo como automovil";
+        }
+
+        public override string encender()
+        {
+            return "Estoy encendiendo como automovil";
+        }
+
+        public override string frenar()
+        {
+            return "Estoy frenando como automovil";
+        }
+
 
 
 
