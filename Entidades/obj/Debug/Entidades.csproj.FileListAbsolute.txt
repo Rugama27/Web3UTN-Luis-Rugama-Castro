@@ -1,0 +1,12 @@
+C:\Users\Pc\source\repos\web3UTNApp\Entidades\bin\Debug\Entidades.dll
+C:\Users\Pc\source\repos\web3UTNApp\Entidades\bin\Debug\Entidades.pdb
+C:\Users\Pc\source\repos\web3UTNApp\Entidades\obj\Debug\Entidades.csproj.AssemblyReference.cache
+C:\Users\Pc\source\repos\web3UTNApp\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\Pc\source\repos\web3UTNApp\Entidades\obj\Debug\Entidades.dll
+C:\Users\Pc\source\repos\web3UTNApp\Entidades\obj\Debug\Entidades.pdb
+C:\Users\luisi\source\repos\Web3UTNApp\Entidades\bin\Debug\Entidades.dll
+C:\Users\luisi\source\repos\Web3UTNApp\Entidades\bin\Debug\Entidades.pdb
+C:\Users\luisi\source\repos\Web3UTNApp\Entidades\obj\Debug\Entidades.csproj.AssemblyReference.cache
+C:\Users\luisi\source\repos\Web3UTNApp\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\luisi\source\repos\Web3UTNApp\Entidades\obj\Debug\Entidades.dll
+C:\Users\luisi\source\repos\Web3UTNApp\Entidades\obj\Debug\Entidades.pdb
