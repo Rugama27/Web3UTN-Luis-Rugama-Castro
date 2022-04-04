@@ -10,28 +10,31 @@ namespace CapaDatos
 {
     public class ClientesDatos : IDatos<tbCliente>
     {
-        List<tbCliente> lista;
+        //List<tbCliente> lista;
 
         public ClientesDatos()
         {
-            this.lista = new List<tbCliente>();
+            //this.lista = new List<tbCliente>();
         }
 
         public bool delete(tbCliente cliente)
         {
-            //try
-            //{
-            //    var cli = getById(cliente.id);
-            //    cliente.estado=false;
-            //    //lista.Remove(cliente);
-            //    return true;
-            //}
-            //catch (Exception)
-            //{
+            try
+            {
+                cliente.estado = false;
+                using (var context = new dbUtnProgra3Entities())
+                {
+                    context.Entry<tbCliente>(cliente).State=System.Data.Entity.EntityState.Modified;
+                    context.SaveChanges();
+                }
+                return true;
+            }
+            catch (Exception)
+            {
 
-            //    throw;
-            //}
-            return false;
+                throw;
+            }
+            
         }
 
         public List<tbCliente> getAll()
@@ -64,7 +67,7 @@ namespace CapaDatos
             {
                 using (var context = new dbUtnProgra3Entities())
                 {
-                    return context.tbCliente.Where(x => x.id == id).FirstOrDefault();
+                    return context.tbCliente.Where(x => x.id == id).SingleOrDefault();
                 }
                 
             }
@@ -74,10 +77,10 @@ namespace CapaDatos
             }
         }
 
-        private int getNextId()
-        {
-            return lista.Count() + 1;
-        }
+        //private int getNextId()
+        //{
+        //    return lista.Count() + 1;
+        //}
 
         public tbCliente save(tbCliente cliente)
         {
@@ -124,28 +127,28 @@ namespace CapaDatos
 
         }
 
-        public tbCliente getByIdent(string id)
-        {
-            try
-            {
-                //foreach (var cliente in lista)
-                //{
-                //    if (cliente.identificacion == id)
-                //    {
-                     //return cliente;
-                //    }
-                //}
+    //    public tbCliente getByIdent(string id)
+    //    {
+    //        try
+    //        {
+    //            //foreach (var cliente in lista)
+    //            //{
+    //            //    if (cliente.identificacion == id)
+    //            //    {
+    //                 //return cliente;
+    //            //    }
+    //            //}
                 
 
-                //return lista.Where(x => x.identificacion.Trim().Equals(id.Trim())).SingleOrDefault();
-            }
-            catch (Exception ex)
-            {
+    //            //return lista.Where(x => x.identificacion.Trim().Equals(id.Trim())).SingleOrDefault();
+    //        }
+    //        catch (Exception ex)
+    //        {
 
-                throw;
-            }
-            return null;
-        }
+    //            throw;
+    //        }
+    //        return null;
+    //    }
 
        
     }
