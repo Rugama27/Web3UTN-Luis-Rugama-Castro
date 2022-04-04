@@ -39,6 +39,7 @@ namespace CapaPresentacion
         {
             try
             {
+               
                 lista = ClienteNegocio.getAll();
                 cargarListView(lista);
             }

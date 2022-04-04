@@ -23,11 +23,15 @@ namespace CapaPresentacion
 
         //Acá se manda a llamar la capa de negocio de cliente - guardar
         public INegocio<tbCliente> ClienteNegocio { get; }
+        public INegocio<tbTipoId> TipoIdNegocio { get; }
+        public INegocio<tbTipoCliente> TipoclienteNegocio { get; }
 
-        public frmClientes(INegocio<tbCliente> _clienteNegocio)
+        public frmClientes(INegocio<tbCliente> _clienteNegocio,INegocio<tbTipoId>_tipoIdNegocio, INegocio<tbTipoCliente> _tipoclienteNegocio)
         {
             InitializeComponent();
             ClienteNegocio = _clienteNegocio;
+            TipoIdNegocio=_tipoIdNegocio;
+            TipoclienteNegocio=_tipoclienteNegocio;
         }
 
         private void pcbClose_Click(object sender, EventArgs e)
@@ -152,18 +156,31 @@ namespace CapaPresentacion
         private void cargarForm()
         {
             txtIdentificacion.Text = clienteGlobal.id;
-            cmbTipoId.Text = Enum.GetName(typeof(Enumeradores.tipoId), clienteGlobal.tbPersona.tipoId);
+            //cmbTipoId.Text = Enum.GetName(typeof(Enumeradores.tipoId), clienteGlobal.tbPersona.tipoId);
+            cmbTipoId.SelectedValue =clienteGlobal.tbPersona.tipoId;
             txtNombre.Text = clienteGlobal.tbPersona.nombre;
             txtApell1.Text = clienteGlobal.tbPersona.apellido1;
             txtApell2.Text = clienteGlobal.tbPersona.apellido2;
-            cmbTipoCliente.Text = Enum.GetName(typeof(Enumeradores.tipoCliente), clienteGlobal.tipoCliente);
+            //cmbTipoCliente.Text = Enum.GetName(typeof(Enumeradores.tipoCliente), clienteGlobal.tipoCliente);
+            cmbTipoCliente.SelectedValue = clienteGlobal.tipoCliente;
             dtpFechaSocio.Value = clienteGlobal.fecha_Socio;
-        }
+        } 
 
         private void cargarCombos()
         {
-            cmbTipoId.DataSource = Enum.GetValues(typeof(tipoId));
-            cmbTipoCliente.DataSource = Enum.GetValues(typeof(tipoCliente));
+            //cmbTipoId.DataSource = Enum.GetValues(typeof(tipoId));
+            //cmbTipoCliente.DataSource = Enum.GetValues(typeof(tipoCliente));
+
+            cmbTipoId.DataSource=TipoIdNegocio.getAll();
+            cmbTipoId.DisplayMember="nombre";
+            cmbTipoId.ValueMember="id";
+
+
+            cmbTipoCliente.DataSource=TipoclienteNegocio.getAll();
+            cmbTipoCliente.DisplayMember="nombre";
+            cmbTipoCliente.ValueMember="id";
+
+
         }
 
         private bool validarDatos()
