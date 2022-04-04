@@ -35,7 +35,16 @@ namespace CapaNegocio
 
         public List<tbCliente> getAll()
         {
-            return ClienteDatos.getAll();
+            try
+            {
+                return ClienteDatos.getAll();
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
+           
         }
 
         public tbCliente getById(string id)
